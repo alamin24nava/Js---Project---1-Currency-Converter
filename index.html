@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <section class="section-wrap">
+        <div class="section-inner">
+            <h3 class="text-center pb-4">Currency Converter</h3>
+            <form class="row g-3" action="">
+                <div class="col-md-6">
+                    <label for="currencyAmount" class="form-label">Amount</label>
+                    <input type="number" class="form-control" id="currencyAmount">
+                </div>
+                <div class="col-md-6">
+                    <label for="currency" class="form-label">State</label>
+                    <select class="form-select" id="currency">
+                    <option selected value="doller">Dollar</option>
+                    <option value="pound">Pound</option>
+                    <option value="euro">Euro</option>
+                    <option value="rupee">Rupee</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary" id="sub">Convert</button>
+                </div>
+            </form>
+            <h3 class="result"></h3>
+            <div class="alert alert-danger"></div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
